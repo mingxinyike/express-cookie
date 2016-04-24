@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(method="post")
+    span 用户名：
+    input#username(type="text", name="username" ) 
+    span 密码：
+    input#userpwd(type="password",name="userpwd")
+    input(type="submit", value="提交")
